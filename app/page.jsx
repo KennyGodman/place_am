@@ -135,9 +135,15 @@ const Home = () => {
                 </div>
             </form>
             <div className='social-icons'>
-                <FaXTwitter className='icon'/>
-                <FaInstagram className='icon'/>
-                <FaFacebookF className='icon'/>
+                <a href=''>
+                    <FaXTwitter className='icon'/>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/placeam.ng?igsh=MWlqMjRwMmF3MDBzMg%3D%3D&utm_source=qr">
+                    <FaInstagram className='icon'/>
+                </a>
+                <a href=''>
+                    <FaFacebookF className='icon'/>
+                </a>
             </div>
         </section>
   )
