@@ -50,7 +50,9 @@ const Home = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoader(true)
+    e.stopPropagation();
+
+    setLoader(true);
 
     fetch("https://placeam.com/api/waitlist", {
         method: "POST",
