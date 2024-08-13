@@ -53,7 +53,7 @@ const Home = () => {
     e.stopPropagation();
 
     setLoader(true);
-
+    console.log(email)
     fetch("https://placeam.com/api/waitlist", {
         method: "POST",
         body:JSON.stringify({
