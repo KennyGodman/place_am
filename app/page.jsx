@@ -10,6 +10,7 @@ import phone from "@assets/images/phone.png";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram, FaFacebookF } from "react-icons/fa";
 import { ThreeDots } from 'react-loader-spinner';
+import { Axios } from 'axios';
 
 
 const Home = () => {
@@ -54,7 +55,7 @@ const Home = () => {
 
     setLoader(true);
     console.log(email)
-    fetch("", {
+    fetch("https://placeam.com/api/waitlist", {
         method: "POST",
         body:JSON.stringify({
             email: email.email
