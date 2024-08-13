@@ -7,12 +7,12 @@ export const POST = async (req, res) => {
     
     try{
         await connectToDB();
-        console.log("Email: ", email)
+        
         const newEmail = new Waitlist({
             email: email
         });
         
-        newEmail.save();
+        await newEmail.save();
 
         return new Response({
             status:201,
