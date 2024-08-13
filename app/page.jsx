@@ -52,7 +52,7 @@ const Home = () => {
     e.preventDefault();
     setLoader(true)
 
-    fetch("https://placeam.com/api/waitlist/route", {
+    fetch("https://placeam.com/api/waitlist", {
         method: "POST",
         body:JSON.stringify({
             email: email.email
