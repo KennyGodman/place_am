@@ -52,12 +52,13 @@ const Home = () => {
     e.preventDefault();
     setLoader(true)
 
-    fetch("https://placeam.com/api/waitlist", {
+    fetch("https://placeam.com/api/waitlist/route", {
         method: "POST",
         body:JSON.stringify({
             email: email.email
         })
     }).then(data => {
+        console.log(data)
         toast("You have been added to the waiting list")
         setEmail({email:""});
         setLoader(false)
