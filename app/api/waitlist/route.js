@@ -7,8 +7,8 @@ export const POST = async (req, res) => {
     console.log(email)
     
     try{
-        await connectToDB();
-        
+        connectToDB();
+
         const newEmail = new Waitlist({
             email: email
         });
