@@ -4,9 +4,11 @@ import Waitlist from "@models/waitlist";
 
 export const POST = async (req, res) => {
     const { email } = await req.json();
+    console.log(email)
     
     try{
         await connectToDB();
+        
         const newEmail = new Waitlist({
             email: email
         });

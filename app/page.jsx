@@ -54,7 +54,7 @@ const Home = () => {
 
     setLoader(true);
     console.log(email)
-    fetch("https://placeam.com/api/waitlist", {
+    fetch("", {
         method: "POST",
         body:JSON.stringify({
             email: email.email
