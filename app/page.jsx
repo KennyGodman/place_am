@@ -55,7 +55,7 @@ const Home = () => {
 
     setLoader(true);
     
-    fetch("https://placeam.com/api/waitlist", {
+    fetch("https://www.placeam.com/api/waitlist", {
         method: "POST",
         body:JSON.stringify({
             email: email.email
@@ -139,13 +139,13 @@ const Home = () => {
                 </div>
             </form>
             <div className='social-icons'>
-                <a href=''>
+                <a target="_blank" href='https://x.com/PlaceamNg?t=v1kpOgfGtJXYlgdSmgAGkw&s=09'>
                     <FaXTwitter className='icon'/>
                 </a>
                 <a target="_blank" href="https://www.instagram.com/placeam.ng?igsh=MWlqMjRwMmF3MDBzMg%3D%3D&utm_source=qr">
                     <FaInstagram className='icon'/>
                 </a>
-                <a href=''>
+                <a target="_blank" href='https://www.facebook.com/profile.php?id=61563843128076&mibextid=ZbWKwL'>
                     <FaFacebookF className='icon'/>
                 </a>
             </div>
